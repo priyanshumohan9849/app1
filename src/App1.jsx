@@ -35,7 +35,7 @@ const App1 = () => {
             {/* <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Login/> */}
 
-            <HashRouter basename="/app1" >
+            <HashRouter basename="/app" >
                 <Switch>
                 <Route exact  path="/user/:id" /*component={Card} /*render={()=>{<Card handler={setLogged}/>}}/*/ >
                     <Card handler={setLogged} />

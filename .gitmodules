@@ -1,3 +1,3 @@
-[submodule "app1"]
-	path = app1
-	url = https://github.com/priyanshumohan9849/app1.git
+[submodule "app"]
+	path = app
+	url = https://github.com/priyanshumohan9849/app.git
