@@ -64,7 +64,7 @@ const Movie = (props) => {
     }
     async function add(s) {
         console.log(s + "hello")
-        let result = await fetch(`https://hexanebackend.herokuapp.com/movie/actor/${s}`,
+        let result = await fetch(`https://moviebackendpr.herokuapp.com/movie/actor/${s}`,
             {
                 method: "GET",
                 credentials:'include',
@@ -114,7 +114,7 @@ const Movie = (props) => {
     async function fun(s) {
         /**/
         console.log("hello")
-        let response = await fetch(`https://hexanebackend.herokuapp.com/movie/${s}`,
+        let response = await fetch(`https://moviebackendpr.herokuapp.com/movie/${s}`,
             {
                 method: "GET",
                 credentials:"include",

@@ -22,7 +22,7 @@ function Card(props) {
     
     // window.onresize=()=>{setinnerw(window.innerWidth)}
     var axiosInstance = axios.create({
-        baseURL: 'https://hexanebackend.herokuapp.com',
+        baseURL: 'https://moviebackendpr.herokuapp.com',
         withCredentials: true,
         //baseURL:"http://localhost:5000"
     })
@@ -141,7 +141,7 @@ function Card(props) {
         let name=document.getElementById("criteria").value
         let value=document.getElementById("search").value
         console.log("hello",name,value)
-        let result=await fetch(`https://hexanebackend.herokuapp.com/searchmovie?name=${name}&value=${value}`,{credentials:"include"})
+        let result=await fetch(`https://moviebackendpr.herokuapp.com/searchmovie?name=${name}&value=${value}`,{credentials:"include"})
         let res=await result.json()
         
             props.handler(res.auth)
